@@ -54,11 +54,12 @@ setup(
         "data": ["data/*.csv"],
     },
     install_requires=[
-        "numba>=0.60.0",
+        "numba @ git+https://github.com/numba/numba.git@release0.61",
         "numpy==2.1.3",
         "pandas>=2.2.0",
         "pandas-datareader",
-        "scipy>=1.12"
+        "scipy>=1.12",
+        "setuptools==75.6.0",
     ],
     # List additional groups of dependencies here (e.g. development dependencies).
     # You can install these using the following syntax, for example:
@@ -71,7 +72,7 @@ setup(
             "TA-Lib>=0.4.28", "tqdm", "vectorbt", "yfinance>=0.2.36"
         ],
         "test": [
-            "numba>=0.60.0",
+            "numba @ git+https://github.com/numba/numba.git@release0.61",
             "numpy==2.1.3",
             "pandas>=2.2.0",
             "pandas_datareader>=0.10.0",
